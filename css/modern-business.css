@@ -27,3 +27,41 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+/*-- Redes Sociales--*/
+.fa {
+  padding-bottom: 10px;
+  padding-top: 0px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.fa-facebook {
+  background: #343a40;
+  color: #ffffff;
+}
+
+.fa-twitter {
+  background: #343a40;
+  color: #ffffff;
+}
+
+.fa-github {
+  background: #343a40;
+  color: #ffffff;
+}
+
+.red {
+  color: red;
+}
+
+.orgtable {
+  width: 100%;
+}

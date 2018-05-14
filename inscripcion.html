@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Crear inscripción | I Jornadas de Usuarios de R en Ecuador</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">I Jornadas de Usuarios de R en Ecuador</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Programa
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                <a class="dropdown-item" href="programa-2018.html">Programa 2018</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inscripcion.html">Inscripción</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="call-papers.html">Call for papers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="organizacion.html">Organización</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="live.html">Difusión en vivo</a>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Inscripción
+        <!--small>I Jornadas</small-->
+      </h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Inicio</a>
+        </li>
+        <li class="breadcrumb-item active">Inscripción</li>
+      </ol>
+
+      <h2>Nueva inscripción</h2>
+
+      <form>
+        <div class="form-item form-type-textfield form-item-title">
+          <label for="nombre">Nombre <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+          <input type="text" id="nombre" value="" size="60" maxlength="255" class="form-control required">
+        </div>
+        <br>
+        <div class="form-item form-type-textfield form-item-title">
+          <label for="apellido">Apellido <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+          <input type="text" id="apellido" value="" size="60" maxlength="255" class="form-control required">
+        </div>
+        <br>
+        <div class="form-item form-type-textfield form-item-title">
+          <label for="email">Correo electrónico <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+          <input type="email" id="email" value="" size="60" maxlength="255" class="form-control required">
+        </div>
+        <br>
+        <div class="form-item form-type-textfield form-item-title">
+          <label for="institucion">Institución <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+          <input type="text" id="institucion" value="" size="60" maxlength="255" class="form-control required">
+        </div>
+        <br>
+        <div class="form-item form-type-textfield form-item-title">
+          <label for="sector">Sector <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+          <select class="custom-select my-1 mr-sm-2" id="sector">
+            <option selected>Seleccione...</option>
+            <option value="1">Estudiante</option>
+            <option value="2">Empresa privada</option>
+            <option value="3">Organismo público</option>
+            <option value="3">Otro</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-check">
+          <input class="form-check-input is-invalid" type="checkbox" value="" id="miembro" required>
+          <label for="miembro">Estoy interesado en formar parte del grupo local de R en Ecuador</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input is-invalid" type="checkbox" value="" id="terminos" required>
+          <label for="terminos">Acepto los términos y condiciones <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+          <small id="emailHelp" class="form-text text-muted">Los datos recopilados en este formulario se incluirán en un archivo de datos personales. Su correo electrónico se incluirá en una ronda de distribución a través de la cual recibirá información sobre las noticias relacionadas con las "I Jornadas de Usuarios de R en Ecuador". El usuario elige y acepta expresamente el procesamiento automatizado de sus datos de la manera y para los fines previstos.</small>
+        </div>
+        <br>
+        <div class="form-group">
+          <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+          <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+          <small id="emailHelp" class="form-text text-muted">Esta opción es para verificar si usted es un ser humano o una máquina a la que desea enviar correo no deseado.</small>
+          <div class="help-block with-errors"></div>
+        </div>
+        <button type="submit" class="btn btn-lg btn-secondary btn-block">Aceptar</button>
+      </form>
+      <br>
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <div class="list-inline text-center">
+          <a href="https://www.facebook.com/groups/rusersgroup" target="_blank" class="fa fa-facebook text-muted"></a>
+          <a href="https://twitter.com/rusersgroup" target="_blank" class="fa fa-twitter text-muted"></a>
+          <a href="https://github.com/rusersgroup" target="_blank" class="fa fa-github text-muted"></a>
+          <a href="http://rusersgroup.com/" target="_blank" class="fa text-muted"><b>R</b></a>
+        </div>
+          <p class="m-0 text-center copyright text-muted">Copyright &copy;  R Users Group - Ecuador &nbsp;•&nbsp; 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  </body>
+
+</html>

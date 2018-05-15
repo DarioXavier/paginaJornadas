@@ -64,72 +64,102 @@
 
     <!-- Page Content -->
     <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
 
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Inscripción
-        <!--small>I Jornadas</small-->
-      </h1>
+          <!-- Page Heading/Breadcrumbs -->
+          <h1 class="mt-4 mb-3">Inscripción
+            <!--small>I Jornadas</small-->
+          </h1>
 
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html">Inicio</a>
-        </li>
-        <li class="breadcrumb-item active">Inscripción</li>
-      </ol>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">Inicio</a>
+            </li>
+            <li class="breadcrumb-item active">Inscripción</li>
+          </ol>
 
-      <h2>Nueva inscripción</h2>
+          <h2>Nueva inscripción</h2>
 
-      <form>
-        <div class="form-item form-type-textfield form-item-title">
-          <label for="nombre">Nombre <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
-          <input type="text" id="nombre" value="" size="60" maxlength="255" class="form-control required">
+          <form>
+            <div class="form-item form-type-textfield form-item-title">
+              <label for="nombre">Nombre <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+              <input type="text" id="nombre" value="" size="60" maxlength="255" class="form-control required">
+            </div>
+            <br>
+            <div class="form-item form-type-textfield form-item-title">
+              <label for="apellido">Apellido <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+              <input type="text" id="apellido" value="" size="60" maxlength="255" class="form-control required">
+            </div>
+            <br>
+            <div class="form-item form-type-textfield form-item-title">
+              <label for="email">Correo electrónico <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+              <input type="email" id="email" value="" size="60" maxlength="255" class="form-control required">
+            </div>
+            <br>
+            <div class="form-item form-type-textfield form-item-title">
+              <label for="institucion">Institución <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+              <input type="text" id="institucion" value="" size="60" maxlength="255" class="form-control required">
+            </div>
+            <br>
+            <div class="form-item form-type-textfield form-item-title">
+              <label for="sector">Sector <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+              <select class="custom-select my-1 mr-sm-2" id="sector">
+                <option selected>Seleccione...</option>
+                <option value="1">Estudiante</option>
+                <option value="2">Empresa privada</option>
+                <option value="3">Organismo público</option>
+                <option value="3">Otro</option>
+              </select>
+            </div>
+            <br>
+            <div class="form-check">
+              <input class="form-check-input is-invalid" type="checkbox" value="" id="miembro" required>
+              <label for="miembro">Estoy interesado en formar parte del grupo local de R en Ecuador</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input is-invalid" type="checkbox" value="" id="terminos" required>
+              <label for="terminos">Acepto los términos y condiciones <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+              <small id="emailHelp" class="form-text text-muted">Los datos recopilados en este formulario se incluirán en un archivo de datos personales. Su correo electrónico se incluirá en una ronda de distribución a través de la cual recibirá información sobre las noticias relacionadas con las "I Jornadas de Usuarios de R en Ecuador". El usuario elige y acepta expresamente el procesamiento automatizado de sus datos de la manera y para los fines previstos.</small>
+            </div>
+            <br>
+            <div class="form-group">
+              <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+              <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+              <small id="emailHelp" class="form-text text-muted">Esta opción es para verificar si usted es un ser humano o una máquina a la que desea enviar correo no deseado.</small>
+              <div class="help-block with-errors"></div>
+            </div>
+            <button type="submit" class="btn btn-lg btn-secondary btn-block">Aceptar</button>
+          </form>
+          <br>
         </div>
-        <br>
-        <div class="form-item form-type-textfield form-item-title">
-          <label for="apellido">Apellido <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
-          <input type="text" id="apellido" value="" size="60" maxlength="255" class="form-control required">
+        <div class="col-lg-3">
+          <h3 class="mt-4 mb-3">Noticias</h3>
+          <div class="rightweet" style="height:400px; overflow-y:auto;">
+            <blockquote>
+              <a class="twitter-timeline" href="https://twitter.com/rusersgroup">Tweets by Rusersgroup</a>
+            </blockquote>
+          </div>
+          <h3 class="mt-4 mb-3">Patrocina</h3>
+          <div>
+            <div class="text-center rightimg">
+              <img src="img/patrocinador1.png" class="img-rounded" width="75%"> 
+            </div>
+          </div>
+          <h3 class="mt-4 mb-3">Colabora</h3>
+          <div>
+            <div class="text-center rightimg">
+              <img src="img/colaborador1.png" class="img-rounded" width="50%">
+            </div>
+            <div class="text-center rightimg">
+              <img src="img/colaborador2.png" class="img-rounded" width="50%">
+            </div>
+            <div class="text-center rightimg">
+              <img src="img/colaborador3.png" class="img-rounded" width="50%">
+            </div>
+          </div>
         </div>
-        <br>
-        <div class="form-item form-type-textfield form-item-title">
-          <label for="email">Correo electrónico <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
-          <input type="email" id="email" value="" size="60" maxlength="255" class="form-control required">
-        </div>
-        <br>
-        <div class="form-item form-type-textfield form-item-title">
-          <label for="institucion">Institución <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
-          <input type="text" id="institucion" value="" size="60" maxlength="255" class="form-control required">
-        </div>
-        <br>
-        <div class="form-item form-type-textfield form-item-title">
-          <label for="sector">Sector <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
-          <select class="custom-select my-1 mr-sm-2" id="sector">
-            <option selected>Seleccione...</option>
-            <option value="1">Estudiante</option>
-            <option value="2">Empresa privada</option>
-            <option value="3">Organismo público</option>
-            <option value="3">Otro</option>
-          </select>
-        </div>
-        <br>
-        <div class="form-check">
-          <input class="form-check-input is-invalid" type="checkbox" value="" id="miembro" required>
-          <label for="miembro">Estoy interesado en formar parte del grupo local de R en Ecuador</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input is-invalid" type="checkbox" value="" id="terminos" required>
-          <label for="terminos">Acepto los términos y condiciones <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
-          <small id="emailHelp" class="form-text text-muted">Los datos recopilados en este formulario se incluirán en un archivo de datos personales. Su correo electrónico se incluirá en una ronda de distribución a través de la cual recibirá información sobre las noticias relacionadas con las "I Jornadas de Usuarios de R en Ecuador". El usuario elige y acepta expresamente el procesamiento automatizado de sus datos de la manera y para los fines previstos.</small>
-        </div>
-        <br>
-        <div class="form-group">
-          <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-          <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
-          <small id="emailHelp" class="form-text text-muted">Esta opción es para verificar si usted es un ser humano o una máquina a la que desea enviar correo no deseado.</small>
-          <div class="help-block with-errors"></div>
-        </div>
-        <button type="submit" class="btn btn-lg btn-secondary btn-block">Aceptar</button>
-      </form>
-      <br>
+      </div>
     </div>
     <!-- /.container -->
 
@@ -150,7 +180,8 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!--script src='https://www.google.com/recaptcha/api.js'></script-->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
   </body>
 

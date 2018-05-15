@@ -65,3 +65,20 @@ body {
 .orgtable {
   width: 100%;
 }
+
+/*-- Right card--*/
+.rightweet {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: .05rem 0.1rem;
+  margin-bottom: rem;
+  list-style: none;
+  background-color: #e9ecef;
+  border-radius: .25rem;
+}
+
+.rightimg {
+  padding: .5rem 0.5rem;
+}

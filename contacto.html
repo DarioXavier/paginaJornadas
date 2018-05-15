@@ -64,91 +64,119 @@
 
     <!-- Page Content -->
     <div class="container">
-
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Contacto
-        <!--small>I Jornadas</small-->
-      </h1>
-
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html">Inicio</a>
-        </li>
-        <li class="breadcrumb-item active">Contacto</li>
-      </ol>
-
-      <!-- Content Row -->
       <div class="row">
-        <!-- Map Column -->
-        <div class="col-lg-8 mb-4">
-          <!-- Embedded Google Map -->
-          <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=es&amp;ie=UTF8&amp;ll=-0.2115536,-78.4902869&amp;spn=56.506174,79.013672&amp;t=m&amp;z=18&amp;output=embed"></iframe>
+        <div class="col-lg-9">
+          <!-- Page Heading/Breadcrumbs -->
+          <h1 class="mt-4 mb-3">Contacto
+            <!--small>I Jornadas</small-->
+          </h1>
+
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">Inicio</a>
+            </li>
+            <li class="breadcrumb-item active">Contacto</li>
+          </ol>
+
+          <!-- Content Row -->
+          <div class="row">
+            <!-- Map Column -->
+            <div class="col-lg-8 mb-4">
+              <!-- Embedded Google Map -->
+              <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=es&amp;ie=UTF8&amp;ll=-0.2115536,-78.4902869&amp;spn=56.506174,79.013672&amp;t=m&amp;z=18&amp;output=embed"></iframe>
+            </div>
+            <!-- Contact Details Column -->
+            <div class="col-lg-4 mb-4">
+              <h3>Detalles</h3>
+              <p>
+                Ladrón de Guevara E11·253
+                <br> [PO·Box 17-01-2759]
+                <br>
+              </p>
+              <p>
+                <abbr title="Phone">P</abbr>: (+593) 2 2976 300
+              </p>
+              <p>
+                <abbr title="Email">E</abbr>:
+                <a href="mailto:name@example.com">name@example.com
+                </a>
+              </p>
+              <p>
+                <abbr title="Hours">H</abbr>: Lunes - Viernes: 9:00 a 16:00
+              </p>
+            </div>
+          </div>
+          <!-- /.row -->
+
+          <!-- Contact Form -->
+          <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+          <div class="row">
+            <div class="col-lg-8 mb-4">
+              <h3>Envíanos un mensaje</h3>
+              <form name="sentMessage" id="contactForm" novalidate>
+                <div class="control-group form-group">
+                  <div class="controls">
+                    <label>Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" required data-validation-required-message="Ingresa tu nombre y apellido.">
+                    <p class="help-block"></p>
+                  </div>
+                </div>
+                <div class="control-group form-group">
+                  <div class="controls">
+                    <label>Número de teléfono:</label>
+                    <input type="tel" class="form-control" id="telefono" required data-validation-required-message="Ingresa tu número de teléfono.">
+                  </div>
+                </div>
+                <div class="control-group form-group">
+                  <div class="controls">
+                    <label>Correo electrónico:</label>
+                    <input type="email" class="form-control" id="correo" required data-validation-required-message="Ingresa tu correo electrónico.">
+                  </div>
+                </div>
+                <div class="control-group form-group">
+                  <div class="controls">
+                    <label>Mensaje:</label>
+                    <textarea rows="10" cols="100" class="form-control" id="mensaje" required data-validation-required-message="Ingresa tu mensaje" maxlength="999" style="resize:none"></textarea>
+                  </div>
+                </div>
+                <div id="success"></div>
+
+                <button type="submit" class="btn btn-lg btn-secondary btn-block" id="enviarmensaje">Enviar</button>
+                <!-- For success/fail messages >
+                <button type="submit" class="btn btn-primary" id="sendMessageButton">Enviar</button-->
+              </form>
+            </div>
+          </div>
         </div>
-        <!-- Contact Details Column -->
-        <div class="col-lg-4 mb-4">
-          <h3>Detalles</h3>
-          <p>
-            Ladrón de Guevara E11·253
-            <br> [PO·Box 17-01-2759]
-            <br>
-          </p>
-          <p>
-            <abbr title="Phone">P</abbr>: (+593) 2 2976 300
-          </p>
-          <p>
-            <abbr title="Email">E</abbr>:
-            <a href="mailto:name@example.com">name@example.com
-            </a>
-          </p>
-          <p>
-            <abbr title="Hours">H</abbr>: Lunes - Viernes: 9:00 a 16:00
-          </p>
+        <div class="col-lg-3">
+          <h3 class="mt-4 mb-3">Noticias</h3>
+          <div class="rightweet" style="height:400px; overflow-y:auto;">
+            <blockquote>
+              <a class="twitter-timeline" href="https://twitter.com/rusersgroup">Tweets by Rusersgroup</a>
+            </blockquote>
+          </div>
+          <h3 class="mt-4 mb-3">Patrocina</h3>
+          <div>
+            <div class="text-center rightimg">
+              <img src="img/patrocinador1.png" class="img-rounded" width="75%"> 
+            </div>
+          </div>
+          <h3 class="mt-4 mb-3">Colabora</h3>
+          <div>
+            <div class="text-center rightimg">
+              <img src="img/colaborador1.png" class="img-rounded" width="50%">
+            </div>
+            <div class="text-center rightimg">
+              <img src="img/colaborador2.png" class="img-rounded" width="50%">
+            </div>
+            <div class="text-center rightimg">
+              <img src="img/colaborador3.png" class="img-rounded" width="50%">
+            </div>
+          </div>
         </div>
       </div>
-      <!-- /.row -->
-
-      <!-- Contact Form -->
-      <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-      <div class="row">
-        <div class="col-lg-8 mb-4">
-          <h3>Envíanos un mensaje</h3>
-          <form name="sentMessage" id="contactForm" novalidate>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Nombre:</label>
-                <input type="text" class="form-control" id="nombre" required data-validation-required-message="Ingresa tu nombre y apellido.">
-                <p class="help-block"></p>
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Número de teléfono:</label>
-                <input type="tel" class="form-control" id="telefono" required data-validation-required-message="Ingresa tu número de teléfono.">
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Correo electrónico:</label>
-                <input type="email" class="form-control" id="correo" required data-validation-required-message="Ingresa tu correo electrónico.">
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Mensaje:</label>
-                <textarea rows="10" cols="100" class="form-control" id="mensaje" required data-validation-required-message="Ingresa tu mensaje" maxlength="999" style="resize:none"></textarea>
-              </div>
-            </div>
-            <div id="success"></div>
-
-            <button type="submit" class="btn btn-lg btn-secondary btn-block" id="enviarmensaje">Enviar</button>
-            <!-- For success/fail messages >
-            <button type="submit" class="btn btn-primary" id="sendMessageButton">Enviar</button-->
-          </form>
-        </div>
-
-      </div>
-      <!-- /.row -->
     </div>
+    <!-- /.row -->
     <!-- /.container -->
 
     <!-- Footer -->
@@ -168,6 +196,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
   </body>
 

@@ -113,35 +113,33 @@
           <div class="row">
             <div class="col-lg-8 mb-4">
               <h3>Envíanos un mensaje</h3>
-              <form name="sentMessage" id="contactForm" novalidate>
+              <form name="sendMessage" id="contactForm" method="post" action="sendmsg.php">
                 <div class="control-group form-group">
-                  <div class="controls">
-                    <label>Nombre:</label>
-                    <input type="text" class="form-control" id="nombre" required data-validation-required-message="Ingresa tu nombre y apellido.">
+                  <div class="form-item form-type-textfield form-item-title controls">
+                    <label for="nombremsg">Nombre <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+                    <input type="text" class="form-control required" name="nombremsg" id="nombremsg" required data-validation-required-message="Ingresa tu nombre y apellido.">
                     <p class="help-block"></p>
                   </div>
                 </div>
                 <div class="control-group form-group">
-                  <div class="controls">
-                    <label>Número de teléfono:</label>
-                    <input type="tel" class="form-control" id="telefono" required data-validation-required-message="Ingresa tu número de teléfono.">
+                  <div class="form-item form-type-textfield form-item-title controls">
+                    <label for="telefonomsg">Número de teléfono <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+                    <input type="tel" class="form-control required" name="telefonomsg" id="telefonomsg" required data-validation-required-message="Ingresa tu número de teléfono.">
                   </div>
                 </div>
                 <div class="control-group form-group">
-                  <div class="controls">
-                    <label>Correo electrónico:</label>
-                    <input type="email" class="form-control" id="correo" required data-validation-required-message="Ingresa tu correo electrónico.">
+                  <div class="form-item form-type-textfield form-item-title controls">
+                    <label for="correomsg">Correo electrónico <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+                    <input type="email" class="form-control required" name="correomsg" id="correomsg" required data-validation-required-message="Ingresa tu correo electrónico.">
                   </div>
                 </div>
                 <div class="control-group form-group">
-                  <div class="controls">
-                    <label>Mensaje:</label>
-                    <textarea rows="10" cols="100" class="form-control" id="mensaje" required data-validation-required-message="Ingresa tu mensaje" maxlength="999" style="resize:none"></textarea>
+                  <div class="form-item form-type-textfield form-item-title controls">
+                    <label for="mensajemsg">Mensaje <span class="form-required red" title="Este campo es obligatorio.">*</span></label>
+                    <textarea rows="10" cols="100" class="form-control required"  name="mensajemsg" id="mensajemsg" required data-validation-required-message="Ingresa tu mensaje" maxlength="999" style="resize:none"></textarea>
                   </div>
                 </div>
-                <div id="success"></div>
-
-                <button type="submit" class="btn btn-lg btn-secondary btn-block" id="enviarmensaje">Enviar</button>
+                <button type="submit" class="btn btn-lg btn-secondary btn-block" id="enviarmsg">Enviar</button>
                 <!-- For success/fail messages >
                 <button type="submit" class="btn btn-primary" id="sendMessageButton">Enviar</button-->
               </form>
